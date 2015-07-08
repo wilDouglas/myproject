@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt" >
+<html lang="pt" ng-app="myapp">
 <head>
     <meta charset="UTF-8">
     <title>My App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
-<body ng-app="myapp">
+<body>
 
-<div ng-controller="HelloController">
-    <h1>Total de clicks {{total}} </h1>
+<div ng-view></div>
 
-    <button ng-click="incrementar()">Clique-me</button>
-</div>
 
-<script type="text/javascript" src="js/angular.min.js"></script>
-<script src='js/app.js'></script>
-<script src="js/controllers/HelloController.js"></script>
+<script src="assets/js/lib/jquery-1.11.3.js"></script>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<script src="assets/js/lib/angular.js"></script>
+<script src="assets/js/lib/angular-route.js"></script>
+<script src="assets/js/lib/angular-resource.js"></script>
+<script src='assets/js/app.js'></script>
+<script src="assets/js/controllers/MainCtrl.js"></script>
 </body>
 </html>
