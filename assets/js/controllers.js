@@ -11,6 +11,9 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
             $scope.nome = "";
 
         }
+        else{
+                $('#nome').css('border-color','red');
+        }
     };
 
     $scope.removePessoa = function(item){
