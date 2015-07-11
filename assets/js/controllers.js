@@ -21,3 +21,7 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
     }
 
 }]);
+
+myapp.controller('HomeCtrl',['$scope', function ($scope) {
+    $scope.message = "Hello World";
+}]);
