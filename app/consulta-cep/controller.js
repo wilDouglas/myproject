@@ -24,8 +24,10 @@ consulta_cep.controller('ConsultaCepCtrl',['$scope','cepList', function ($scope,
 
 
     $scope.consultarCEP = function () {
-
+        
+        $('#card-cep').hide('slow');
         $('#card-cep').show('slow');
+
         cepList.get({cep: $scope.cep},function(response){
 
             $scope.endereco = response;

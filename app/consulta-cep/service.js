@@ -1,4 +1,4 @@
-var homeService = angular.module('myapp.homeService', ['ngResource']);
+var homeService = angular.module('myapp.cepService', ['ngResource']);
 
 homeService.factory('cepList', ['$resource', function ($resource) {
     return $resource('http://cep.correiocontrol.com.br/:cep.json', {}, {
