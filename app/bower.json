@@ -1,0 +1,22 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "Um projeto de apendizagem angular js",
+  "authors": [
+    "William Silva <williamsilva808@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0",
+    "angularjs": "~1.4.3",
+    "angular-route": "~1.4.3",
+    "angular-resource": "~1.4.3"
+  }
+}

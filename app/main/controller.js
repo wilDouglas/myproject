@@ -7,13 +7,20 @@ main.config(['$routeProvider', '$locationProvider', function ($routeProvider, $l
 
         .when('/', {
 
-            templateUrl: 'app/main/main.html',
+            templateUrl: 'main/main.html',
             controller: 'MainCtrl'
 
         });
 }]);
 
+function initCustomJqueryMain() {
+    $('#link-main').addClass('active');
+    $('#link-consulta-cep').removeClass('active');
+}
 main.controller('MainCtrl', ["$scope", function ($scope) {
+
+    initCustomJqueryMain();
+
     $scope.nome = "";
 
     $scope.pessoas = [];

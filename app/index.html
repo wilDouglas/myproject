@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="myapp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>My App</title>
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper indigo">
+        <a href="http://localhost:63342/myproject/app/#!/" class="brand-logo">My App</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li id="link-main"><a href="http://localhost:63342/myproject/app/#!/">Página Inicial</a></li>
+            <li id="link-consulta-cep"><a href="#!/consulta">Consulta CEP</a></li>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+<script src="bower_components/angularjs/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/materialize/bin/materialize.js"></script>
+
+<script src='app.js'></script>
+<script src="diretivas.js"></script>
+
+<!--main-->
+<script src="main/controller.js"></script>
+<script src="main/service.js"></script>
+
+<!--consulta-cep-->
+<script src="consulta-cep/controller.js"></script>
+<script src="consulta-cep/service.js"></script>
+
+</body>
+</html>
