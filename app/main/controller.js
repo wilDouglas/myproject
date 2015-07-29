@@ -29,7 +29,7 @@ main.controller('MainCtrl', ["$scope", function ($scope) {
 
         if ($scope.nome != "") {
 
-            $scope.pessoas.push({'id': $scope.pessoas.length + 1, 'nome': $scope.nome});
+            $scope.pessoas.push({'id': ($scope.pessoas.length + 1), 'nome': $scope.nome});
             $scope.nome = "";
 
         }
